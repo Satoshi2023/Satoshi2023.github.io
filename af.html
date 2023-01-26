@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Registration Form</title>
+    <link rel="stylesheet" href="static/css/yyt-style.css">
+    <link rel="stylesheet" href="static/css/reset.css">
+    <script src="./static/js/config.js"></script>
+    <style>
+        .b_back {
+            background: url(static/image/shuangfang-bj.jpg) no-repeat;
+            position: relative;
+            height: 701px;
+        }
+    </style>
+</head>
+
+<body onload="">
+    <script src="static/js/html2canvas.js"></script>
+    <div id="tryhtml2canvas" class="css-1xamfmm"><img
+            src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMuMiIvPgogICAgPHBhdGggZD0iTTkgMkw3LjE3IDRINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0yaC0zLjE3TDE1IDJIOXptMyAxNWMtMi43NiAwLTUtMi4yNC01LTVzMi4yNC01IDUtNSA1IDIuMjQgNSA1LTIuMjQgNS01IDV6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo="
+            alt="Try html2canvas" class="css-1bgbwga"></div>
+    <div id="output"></div>
+    <div id="capture" contenteditable="true" class="back">
+        <div class="b_back">
+            <div class="b_time c_time">
+                2021年05月11日
+            </div>
+            <div class="b_inp">
+                <img src="static/picture/01.png" class="b_left">
+                <img src="static/picture/02.png" class="b_right">
+            </div>
+            <div class="b_input">
+                <ul style="display: inline-block;">
+                    <li><input type="text" placeholder="XXXX"></li>
+                    <li><input type="text" placeholder="9123dxx"></li>
+                    <li><input type="text" placeholder="30"></li>
+                    <li><input type="text" placeholder="eew"></li>
+                    <li><input type="text" placeholder="hlo95567345"></li>
+                </ul>
+                <ul style="display: inline-block;margin-left: 196px;">
+                    <li><input type="text" placeholder="Alis"></li>
+                    <li><input type="text" placeholder="★★★★★"></li>
+                    <li><input type="text" placeholder="Connie"></li>
+                    <li><input type="text" placeholder="100%"></li>
+                    <li><input type="text" placeholder="Success！"></li>
+                </ul>
+            </div>
+            <div class="photo">
+                <div style="padding: 0px">
+                    <!-- <div class="p_le">
+                        <div id="p_lem"></div>
+                        <div class="p_left">
+                            <input type="file" id="pleft" name="pic">
+                        </div>
+                    </div> -->
+                    <div class="p_ri">
+                        <div id="p_rim"></div>
+                        <div class="p_right">
+                            <input type="file" id="pright" name="pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    setInterval(function () {
+        var ctime = document.getElementsByClassName("c_time")[0]
+        var tim = new Date()
+        var year = tim.getFullYear()
+        var month = tim.getMonth() + 1
+        monthlength = month.toString().length
+        monthlength == 1 ? month = "0" + month : month
+        var dat = tim.getDate()
+        var datlength = dat.toString().length
+        datlength == 1 ? dat = "0" + dat : dat
+        var hours = tim.getHours()
+        var hourslength = hours.toString().length
+        hourslength == 1 ? hours = "0" + hours : hours
+        var minu = tim.getMinutes()
+        var minulength = minu.toString().length
+        minulength == 1 ? minu = "0" + minu : minu
+        var seco = tim.getSeconds()
+        var secolength = seco.toString().length
+        secolength == 1 ? seco = "0" + seco : seco = seco
+        ctime.innerHTML = year + "/" + month + "/" + dat + "/"
+    }, 1000)
+</script>
+<script src="static/js/yyt.js"></script>
+<script src="static/js/canvas.js"></script>
+
+
+</html>

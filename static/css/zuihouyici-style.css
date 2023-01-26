@@ -1,0 +1,134 @@
+@font-face {
+    font-family: PingFangSC;
+}
+
+body {
+    margin: 0px auto;
+    background-color: #2d2d2c;
+    overflow: visible;
+}
+
+#capture {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.css-1xamfmm,
+[data-css-1xamfmm] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.36);
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transform: scale;
+    border-radius: 50%;
+    visibility: visible;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+span,
+p,
+a {
+    font-family: PingFangSC;
+}
+
+body {
+    background-color: #858585;
+}
+
+body .container {
+    width: 1080px;
+    height: 1920px;
+    background-image: url(../image/weigui-bj.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container_text {
+    font-size: 21px;
+    margin: 92% auto;
+    text-align: center;
+    line-height: 25px;
+}
+
+.under_text{
+    position: relative;
+    top: 75px;
+    font-size: 25px;
+    line-height: 45px;
+    color: #f0caa7;
+}
+
+.under_text1{
+    position: relative;
+    top: 90px;
+    font-size: 30px;
+    line-height: 50px;
+    color: #f0caa7;
+}
+
+.top_text{
+    position: relative;
+    bottom: 12px;
+    font-size: 26px;
+}
+
+.container .container_text .top_text p,
+.container .container_text .center_text p,
+.container .container_text .bottom_text p {
+    color: #a4a6cf;
+}
+
+.container .container_text .top_text p span,
+.container .container_text .center_text p span,
+.container .container_text .bottom_text p span {
+    color: #f0caa7;
+}
+
+.container .container_text .center_text {
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 55px;
+}
+
+.container .container_text .bottom_text {
+    /* margin: 66px auto; */
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.c_text {
+    position: absolute;
+    left: 65%;
+    top: 45.7%;
+    z-index: 98;
+}
+
+.c_text .c_time {
+    font-size: 20px;
+    font-weight: 600;
+    color: #575970;
+    letter-spacing: 1px;
+}

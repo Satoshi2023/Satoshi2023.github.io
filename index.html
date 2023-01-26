@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hookup Pro</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="static/css/main.css">
+<script src="./static/js/config.js"></script>
+<style>
+        .body_back {
+            width: 100%;
+            height: 100%;
+            background-image: url(static/image/bg.jpg);
+            position: fixed;
+            background-size: 100% auto;
+        }
+    </style>
+</head>
+<body class="is-preload" onload="">
+<div class="body_back"></div>
+<div id="wrapper">
+<section id="main">
+<header>
+<span class="avatar"><img src="static/picture/wy-logo_icon.png" alt=""></span>
+<h1>Hookup Pro</h1>
+<h1>selection list</h1>
+<p>※USER VIOLATION<a href="uv.html" target="_blank">click enter</a></p>
+<p>※Appointment Form<a href="af.html" target="_blank">click enter</a></p>
+</header></section>
+</div>
+<script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function() {
+                document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+<script src="static/js/main.js"></script>
+
+</body>
+</html>
